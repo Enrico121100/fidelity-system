@@ -1,0 +1,15 @@
+{
+  "name": "fidelity-system",
+  "version": "1.0.0",
+  "description": "Sistema Fidelity Card con MongoDB",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.18.0",
+    "mongoose": "^7.0.0",
+    "uuid": "^9.0.0"
+  }
+}
