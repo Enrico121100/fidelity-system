@@ -1,0 +1,115 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgba(7, 177, 24, 0.582);
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.logo {
+  max-width: 360px;
+  margin: 0 auto 20px;
+  display: block;
+}
+
+.description {
+  font-size: 18px;
+  color: #ffffff;
+  margin: 10px auto 30px;
+  max-width: 700px;
+  line-height: 1.6;
+  font-weight: 600;
+}
+
+.login-box {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #047002;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+button {
+  padding: 12px;
+  margin-top: 12px;
+  border-radius: 8px;
+  background-color: #ff9900;
+  color: #ffffff;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #ffae01;
+}
+
+.rewards-section {
+  max-width: 900px;
+  margin: 50px auto 0;
+}
+
+.rewards-section h3 {
+  color: #047002;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.rewards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 0 10px;
+}
+
+.reward {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.reward img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.reward-name {
+  font-weight: bold;
+  color: #047002;
+  font-size: 16px;
+}
+
+.reward-points {
+  color: #ff9900;
+  font-weight: bold;
+  font-size: 14px;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <link rel="stylesheet" href="/style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fidelity Cash</title>
+</head>
+<body>
+
+  <!-- LOGO -->
+  <img src="/img/logo.png" alt="Cash Sicilia" class="logo" />
+
+  <!-- DESCRIZIONE -->
+  <div class="description">
+    GUADAGNA 1 CASHPOINT PER OGNI EURO DI SPESA,<br>
+    RACCOGLI CASHPOINT PER RISCATTARE FANTASTICI PREMI ALLA CASSA.<br><br>
+    RICORDA DI MOSTRARE IL TUO CODICE AL MOMENTO DEL PAGAMENTO PER AVER ACCREDITATO I PUNTI CHE TI SPETTANO.<br><br>
+    TI ASPETTANO FANTASTICHE RICOMPENSE!!
+  </div>
+
+  <!-- BOX LOGIN -->
+  <div class="login-box">
+    <h2>ACCEDI ALLA TUA FIDELITY CARD</h2>
+    <form method="POST" action="/login">
+      <input type="text" name="cardCode" placeholder="Codice Fidelity (12 cifre)" required />
+      <input type="text" name="username" placeholder="Nome utente" required />
+      <button type="submit">Accedi</button>
+    </form>
+    <% if (typeof error !== 'undefined') { %>
+  <p style="color: red; margin-top: 10px;"><%= error %></p>
+<% } %>
+  </div>
+
+  <!-- PREMI -->
+  <div class="rewards-section">
+    <h3>🎁 I NOSTRI PREMI 🎁</h3>
+    <div class="rewards-grid">
+      <div class="reward">
+        <img src="https://via.placeholder.com/300?text=T-Shirt" alt="Premio 1" />
+        <div class="reward-name">1 KG PASTA POIATTI A SCELTA</div>
+        <div class="reward-points">50 punti</div>
+      </div>
+            <div class="reward">
+        <img src="https://via.placeholder.com/300?text=Buono+10€" alt="Premio 2" />
+        <div class="reward-name">1 CARTONE DI CALICI DI CRISTALLO</div>
+        <div class="reward-points">500 punti</div>
+      </div>
+      <div class="reward">
+        <img src="https://via.placeholder.com/300?text=Buono+10€" alt="Premio 3" />
+        <div class="reward-name">BAFFA DI SALMONE NORVEGESE</div>
+        <div class="reward-points">1000 punti</div>
+      </div>
+      <div class="reward">
+        <img src="https://via.placeholder.com/300?text=Cassa+Bluetooth" alt="Premio 4" />
+        <div class="reward-name">BUONO SPESA 10€</div>
+        <div class="reward-points">2000 punti</div>
+      </div>
+      <div class="reward">
+        <img src="https://via.placeholder.com/300?text=Cassa+Bluetooth" alt="Premio 5" />
+        <div class="reward-name">BUONO SPESA 25€</div>
+        <div class="reward-points">4000 punti</div>
+      </div>
+           <div class="reward">
+        <img src="https://via.placeholder.com/300?text=Cassa+Bluetooth" alt="Premio 6" />
+        <div class="reward-name">BUONO SPESA 50€</div>
+        <div class="reward-points">6000 punti</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
